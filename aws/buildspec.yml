@@ -12,7 +12,7 @@ phases:
       - npm install
       - aws --version
       - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
-      - REPOSITORY_URI=885406712689.dkr.ecr.us-east-2.amazonaws.com/backaws
+      - REPOSITORY_URI=034943368938.dkr.ecr.us-east-2.amazonaws.com/backaws:latest
       - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
       - IMAGE_TAG=build-$(echo $CODEBUILD_BUILD_ID | awk -F":" '{print $2}')
   build:
