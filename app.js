@@ -13,7 +13,7 @@ const juegos = [
 ];
 
 app.get('/',(req, res )=> {
-    res.send('Lo que chingado quiera');
+    res.send('Ahora si estoy feli :)');
 })
 
 app.get('/api/jugadores',(req,res)=>{
