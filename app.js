@@ -13,7 +13,7 @@ const juegos = [
 ];
 
 app.get('/',(req, res )=> {
-    res.send('Api microservicios conectada');
+    res.send('Lo que chingado quiera');
 })
 
 app.get('/api/jugadores',(req,res)=>{
